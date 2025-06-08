@@ -1,0 +1,119 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #1b5e20;
+    background-color: #f1f8e9;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(56, 142, 60, 0.8), rgba(56, 142, 60, 0.8)), url('assets/image-campo-hero.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+    border-bottom: 4px solid #ffb300;
+}
+
+.section-title {
+    color: #388e3c;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #ffb300;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-img {
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: #28a745 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1b5e20 !important;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bg-light {
+    background-color: #e8f5e9 !important;
+}
+
+footer {
+    background-color: #1b5e20;
+}
+
+footer a {
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffb300;
+    transform: scale(1.2);
+}
+
+.audio-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #28a745;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.audio-btn::-webkit-media-controls-panel {
+    background-color: #28a745;
+    padding: 0;
+    transform: scale(0.6);
+}
+
+.audio-btn::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.audio-btn::-webkit-media-controls-volume-slider,
+.audio-btn::-webkit-media-controls-mute-button,
+.audio-btn::-webkit-media-controls-timeline,
+.audio-btn::-webkit-media-controls-current-time-display,
+.audio-btn::-webkit-media-controls-time-remaining-display {
+    display: none;
+}

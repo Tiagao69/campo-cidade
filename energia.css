@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/image/energia-rural-bg.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.section-title {
+    color: #28a745;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.section-img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section-img:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #28a745 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.bg-light {
+    background-color: #e9ecef !important;
+}
+
+footer a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #28a745;
+}
+
+.audio-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #28a745;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.audio-btn::-webkit-media-controls-panel {
+    background-color: #28a745;
+    padding: 0;
+    transform: scale(0.6);
+}
+
+.audio-btn::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.audio-btn::-webkit-media-controls-volume-slider,
+.audio-btn::-webkit-media-controls-mute-button,
+.audio-btn::-webkit-media-controls-timeline,
+.audio-btn::-webkit-media-controls-current-time-display,
+.audio-btn::-webkit-media-controls-time-remaining-display {
+    display: none;
+}

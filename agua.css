@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section {
+    background: url('assets/img-agua-campo.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 5rem 0;
+}
+
+.section-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audio-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.audio-btn::-webkit-media-controls-panel {
+    background-color: #28a745;
+    padding: 0;
+    transform: scale(0.8);
+    border-radius: 50%;
+}
+
+.audio-btn::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.audio-btn::-webkit-media-controls-volume-slider,
+.audio-btn::-webkit-media-controls-mute-button,
+.audio-btn::-webkit-media-controls-timeline,
+.audio-btn::-webkit-media-controls-current-time-display,
+.audio-btn::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+/* Melhorias para responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 0;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-img {
+        margin-bottom: 1.5rem;
+    }
+
+    .row.align-items-center {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row.align-items-center .col-md-6 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .audio-btn {
+        width: 25px;
+        height: 25px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
